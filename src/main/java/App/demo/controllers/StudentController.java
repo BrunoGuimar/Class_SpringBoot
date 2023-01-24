@@ -1,6 +1,8 @@
 package App.demo.controllers;
 
+import App.demo.model.entities.Discipline;
 import App.demo.model.entities.Student;
+import App.demo.model.entities.Teacher;
 import App.demo.model.entities.repositories.StudentRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,5 +50,13 @@ public class StudentController {
         repository.deleteById(id);
     }
 
+    @PutMapping("/discipline/{id}")
+    public Object addDiscipline(@Valid Discipline discipline, @PathVariable int id){
+        Optional<Student> studentOpt = repository.findById(id);
+        Student student = studentOpt.get();
+        student.getDisciplines().add(discipline);
+        repository.save(student);
+        return student;
+    }
 
 }

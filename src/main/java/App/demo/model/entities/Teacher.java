@@ -14,7 +14,8 @@ public class Teacher {
     @NotBlank
     private String name;
 
-    private List<String> disciplines = new ArrayList<>();
+    @OneToMany
+    private List<Discipline> disciplines = new ArrayList<>();
 
     public Teacher() {
     }
@@ -39,11 +40,11 @@ public class Teacher {
         this.name = name;
     }
 
-    public List<String> getDisciplines() {
+    public List<Discipline> getDisciplines() {
         return disciplines;
     }
 
-    public void setDisciplines(List<String> disciplines) {
+    public void setDisciplines(List<Discipline> disciplines) {
         this.disciplines = disciplines;
     }
 }

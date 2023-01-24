@@ -20,7 +20,9 @@ public class Student {
         @Column(unique = true)
         private String cpf;
 
-        private List<String> disciplines = new ArrayList<>();
+        @ManyToMany
+        List<Discipline> disciplines = new ArrayList<>();
+
 
         public Student() {
         }
@@ -30,11 +32,11 @@ public class Student {
             this.cpf = cpf;
         }
 
-    public List<String> getDisciplines() {
+    public List<Discipline> getDisciplines() {
         return disciplines;
     }
 
-    public void setDisciplines(List<String> disciplines) {
+    public void setDisciplines(List<Discipline> disciplines) {
         this.disciplines = disciplines;
     }
 

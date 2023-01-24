@@ -1,5 +1,6 @@
 package App.demo.controllers;
 
+import App.demo.model.entities.Discipline;
 import App.demo.model.entities.Teacher;
 import App.demo.model.entities.repositories.TeacherRepository;
 import jakarta.validation.Valid;
@@ -15,7 +16,7 @@ import java.util.Optional;
 @RequestMapping("/teacher")
 public class TeacherController {
 
-    DisciplineController discipline = new DisciplineController();
+    Discipline discipline = new Discipline();
 
     @Autowired
     private TeacherRepository repository;
@@ -51,11 +52,12 @@ public class TeacherController {
         repository.deleteById(id);
     }
 
-    @GetMapping("/discipline/{name}")
-    public List addDiscipline(@PathVariable String name){
-        Teacher teacher1 = new Teacher();
-        teacher1.getDisciplines().add(name);
-        repository.save(teacher1);
-        return teacher1.getDisciplines();
+    @PutMapping("/discipline/{id}")
+    public Object addDiscipline(@Valid Discipline discipline, @PathVariable int id){
+        Optional<Teacher> teacherOpt = repository.findById(id);
+        Teacher teacher = teacherOpt.get();
+        teacher.getDisciplines().add(discipline);
+        repository.save(teacher);
+        return teacher;
     }
 }
