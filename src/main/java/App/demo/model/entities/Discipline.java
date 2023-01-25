@@ -1,7 +1,6 @@
 package App.demo.model.entities;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,9 +15,8 @@ public class Discipline {
     @Column(unique = true)
     private String name;
 
-    @ManyToMany
-    @Transient
-    List<Student> students = new ArrayList<>();
+    @ManyToMany(mappedBy = "disciplines")
+    private List<Student> students = new ArrayList<>();
 
     public Discipline() {
     }

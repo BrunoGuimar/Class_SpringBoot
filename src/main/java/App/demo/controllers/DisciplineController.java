@@ -1,7 +1,6 @@
 package App.demo.controllers;
 
 import App.demo.model.entities.Discipline;
-import App.demo.model.entities.Student;
 import App.demo.model.entities.repositories.DisciplineRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
