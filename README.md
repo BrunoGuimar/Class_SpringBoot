@@ -5,7 +5,7 @@
 <div>  Como ambiente de testes utilizei do <b><a href="https://www.postman.com/">POSTMAN<a/></b>, para criação de endpoints e testes das funcionalidades e regras de negócios implementadas na minha aplicação <b><a href="https://aws.amazon.com/pt/what-is/restful-api/">REST-FULL</a></b>.</div>
 <br>
 <h2>EN-US</h2>
-<div>  This project was carried out with the aim of fixing the knowledge acquired in my recent studies, developing a project for administration and registration of a class, being completely in <b>JAVA</b>, using the <b>SPRING BOOT</b> as framework;</div>
-<div>  As a database i use <b>MySQL</b> and the <b>JPA</b> framework, were used to communicate between them; </div>
-<div>  As a test environment I used <b>POSTMAN</b>, to create endpoints and test the functionalities and business rules implemented in my <b>REST-FULL</b> application.</div>
+<div>  This project was carried out with the aim of fixing the knowledge acquired in my recent studies, developing a project for administration and registration of a class, being completely in <b><a href="https://www.oracle.com/br/java/technologies/downloads/">JAVA</a></b>, using the <b><a href="https://spring.io/projects/spring-boot">SPRING BOOT</a></b> as framework;</div>
+  <div>  As a database i use <b><a href="https://www.mysql.com/">MySQL</a></b> and the <b><a href="https://spring.io/projects/spring-data-jpa">JPA</a></b> framework, were used to communicate between them; </div>
+  <div>  As a test environment I used <b><a href="https://www.postman.com/">POSTMAN</a></b>, to create endpoints and test the functionalities and business rules implemented in my <b><a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-rest-api.html#:~:text=A%20REST%20API%20in%20API,through%20monitoring%20your%20production%20APIs.">REST-FULL</a></b> application.</div>
 
