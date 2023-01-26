@@ -1,11 +1,25 @@
-<h1># ClassSpringBoot</h1>
-<h2>PT-BR</h2>
-<div>  Este projeto foi realizado no intuíto de fixar os conhecimentos adquiridos em meus recentes estudos, desenvolvendo um projeto para administração e cadastro de uma classe de aula, sendo completamente em <b><a href="https://www.oracle.com/br/java/technologies/downloads/">JAVA</a></b>, utilizando do framework <b><a href="https://spring.io/projects/spring-boot">SPRING BOOT</a></b>;</div>
-<div>  Como base de dados foi utilizado o banco de dados <b><a href="https://www.mysql.com/">MySQL</a></b> e do framework <b><a href="https://www.ibm.com/docs/pt-br/was/8.5.5?topic=SSEQTP_8.5.5/com.ibm.websphere.nd.multiplatform.doc/ae/cejb_persistence.htm">JPA</a></b>, para realizar a comunicação entre os mesmos; </div>
-<div>  Como ambiente de testes utilizei do <b><a href="https://www.postman.com/">POSTMAN<a/></b>, para criação de endpoints e testes das funcionalidades e regras de negócios implementadas na minha aplicação <b><a href="https://aws.amazon.com/pt/what-is/restful-api/">REST-FULL</a></b>.</div>
-<br>
-<h2>EN-US</h2>
-<div>  This project was carried out with the aim of fixing the knowledge acquired in my recent studies, developing a project for administration and registration of a class, being completely in <b><a href="https://www.oracle.com/br/java/technologies/downloads/">JAVA</a></b>, using the <b><a href="https://spring.io/projects/spring-boot">SPRING BOOT</a></b> as framework;</div>
-  <div>  As a database i use <b><a href="https://www.mysql.com/">MySQL</a></b> and the <b><a href="https://spring.io/projects/spring-data-jpa">JPA</a></b> framework, were used to communicate between them; </div>
-  <div>  As a test environment I used <b><a href="https://www.postman.com/">POSTMAN</a></b>, to create endpoints and test the functionalities and business rules implemented in my <b><a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-rest-api.html#:~:text=A%20REST%20API%20in%20API,through%20monitoring%20your%20production%20APIs.">REST-FULL</a></b> application.</div>
-
+# ClassSpringBoot
+ 
+## PT-BR
+ 
+ 
+Este projeto foi realizado no intuíto de fixar os conhecimentos adquiridos em meus recentes estudos, desenvolvendo um projeto para administração e cadastro de uma classe de aula, sendo completamente em [Java 19](https://www.oracle.com/br/java/technologies/downloads/), utilizando o framework [Spring Boot 3.0.2](https://spring.io/projects/spring-boot).
+ 
+Como base de dados foi utilizado o banco de dados [MySQL 8.0.30](https://www.oracle.com/br/java/technologies/downloads/) e do framework [JPA](https://spring.io/projects/spring-data-jpa), para realizar a comunicação entre os mesmos.
+ 
+Para realizar as requisicoes nas rotas implementadas utilizei o [Postman](https://www.postman.com).
+ 
+## EN-US
+The main purpose of this project was to fix some of acquired knowledge about some Java and Spring Boot topics. Developing a project for school management, being completely in [Java 19](https://www.oracle.com/br/java/technologies/downloads/), using the [Spring Boot 3.0.2](https://spring.io/projects/spring-boot) as a framework.
+ 
+As a database service was used [MySQL 8.0.30](https://www.oracle.com/br/java/technologies/downloads/) and the [JPA](https://spring.io/projects/spring-data-jpa) framework, were used to communicate between them.
+ 
+To test my routes [Postman](https://www.postman.com) was used.
+ 
+## Running
+ 
+```
+cd ClassSpringBoot
+./mvwn clean install
+java -jar demo-0.0.1-SNAPSHOT.jar
+```
